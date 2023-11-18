@@ -1,3 +1,5 @@
+const { ErrorMessages } = require("./errors");
+
 /**
  * Verifica se o valor fornecido não é um número (ou é NaN).
  * @param {any} value - O valor a ser verificado.
@@ -15,7 +17,7 @@ function isNotNumber(value) {
  * @returns {boolean} Retorna true se o dividendo for divisível pelo divisor, caso contrário, retorna false.
  */
 function isDivisible(dividend, divider) {
-    if (isNotNumber(dividend) || isNotNumber(divider)) throw new TypeError("Parametros devem ser números!");
+    if (isNotNumber(dividend) || isNotNumber(divider)) throw new TypeError(ErrorMessages.TYPE_ERROR);
     return dividend % divider == 0;
 }
 
@@ -37,8 +39,8 @@ function isNegativeNumber(number) {
  * @returns {number} Retorna a soma dos números menores que o número fornecido que são divisíveis por 3 ou 5.
  */
 function sumSmallerDivisibles(number) {
-    if (isNotNumber(number)) throw new TypeError("Parametros devem ser números!");
-    if (isNegativeNumber(number)) throw new RangeError("O número deve ser positivo!");
+    if (isNotNumber(number)) throw new TypeError(ErrorMessages.TYPE_ERROR);
+    if (isNegativeNumber(number)) throw new RangeError(ErrorMessages.RANGE_ERROR);
 
     let sum = 0;
 
