@@ -17,7 +17,7 @@ read.question("Digite um número: ", response => {
         const number = parseInt(response);
 
         // Chama a função 'sumSmallerDivisibles' do módulo 'app' e exibe o resultado
-        console.log("Soma dos números menores que o seu número: " + app.sumSmallerDivisibles(number));
+        console.log(`Soma dos números menores que ${number} e divisíveis por 3 ou 5: ` + app.sumSmallerDivisibles(number));
     } catch (error) {
         // Captura erros, se houverem, e exibe a mensagem de erro
         console.error(error.message);
