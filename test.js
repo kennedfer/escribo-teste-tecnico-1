@@ -10,6 +10,14 @@ describe("Testes Unitarios:", () => {
         })
     }),
 
+        describe("#isNegativeNumber()", () => {
+            it("Deve retornar 'false' quando o parametro FOR positivo", () => {
+                assert.equal(app.isNegativeNumber(22), false)
+            }), it("Deve retornar 'true' quando o parametro FOR negativo", () => {
+                assert.equal(app.isNegativeNumber(-22), true)
+            })
+        }),
+
         describe("#isDivisible()", () => {
             it("Deve retornar 'true' quando o parametro 'dividend' FOR divisivel perfeitamente pelo parametro 'divider'", () => {
                 assert.equal(app.isDivisible(10, 5), true)

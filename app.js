@@ -53,4 +53,4 @@ function sumSmallerDivisibles(number) {
     return sum;
 }
 
-module.exports = { isNotNumber, isDivisible, sumSmallerDivisibles }
+module.exports = { isNegativeNumber, isNotNumber, isDivisible, sumSmallerDivisibles }
