@@ -26,7 +26,6 @@ function isDivisible(dividend, divider) {
  * @param {number} number - O número a ser verificado
  * @returns {boolean} Retorna true se o valor for menor que 0, caso contrário, retorna false
  */
-
 function isNegativeNumber(number) {
     return number < 0;
 }
