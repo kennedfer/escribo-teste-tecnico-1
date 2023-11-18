@@ -1,5 +1,5 @@
 function isNotNumber(value) {
-    return typeof (value) != "number";
+    return typeof (value) != "number" || isNaN(value);
 }
 
 function isDivisible(dividend, divider) {
