@@ -11,7 +11,7 @@ read.question("Digite um número: ", respose => {
         const number = parseInt(respose)
         console.log("Soma dos números menores que o seu número: " + app.sumSmallerDivisibles(number));
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
     } finally {
         read.close();
     }
