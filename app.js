@@ -32,7 +32,7 @@ function isNegativeNumber(number) {
  */
 function sumSmallerDivisibles(number) {
     if (isNotNumber(number)) throw new TypeError("Parametros devem ser números!");
-    if (isNegativeNumber(number)) throw new RangeError("O número deve ser positivo");
+    if (isNegativeNumber(number)) throw new RangeError("O número deve ser positivo!");
 
     let sum = 0;
 
