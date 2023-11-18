@@ -6,12 +6,10 @@ const read = readLine.createInterface({
     output: process.stdout
 });
 
-console.log(typeof (NaN));
-
 read.question("Digite um número: ", respose => {
     try {
         const number = parseInt(respose)
-        console.log(app.sumSmallerDivisibles(number));
+        console.log("Soma dos números menores que o seu número: " + app.sumSmallerDivisibles(number));
     } catch (error) {
         console.log(error);
     } finally {
