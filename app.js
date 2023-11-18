@@ -1,14 +1,14 @@
-function notIsNumber(value) {
+function isNotNumber(value) {
     return typeof (value) != "number";
 }
 
 function isDivisible(dividend, divider) {
-    if (notIsNumber(dividend) || notIsNumber(divider)) throw new TypeError("Parametros devem ser números!");
+    if (isNotNumber(dividend) || isNotNumber(divider)) throw new TypeError("Parametros devem ser números!");
     return dividend % divider == 0;
 }
 
 function sumSmallerDivisibles(number) {
-    if (notIsNumber(number)) throw new TypeError("Parametros devem ser números!");
+    if (isNotNumber(number)) throw new TypeError("Parametros devem ser números!");
 
     let sum = 0;
 
@@ -21,5 +21,5 @@ function sumSmallerDivisibles(number) {
 
     return sum;
 }
-console.log(sumSmallerDivisibles(null));
-module.exports = { isDivisible, sumSmallerDivisibles }
+
+module.exports = { isNotNumber, isDivisible, sumSmallerDivisibles }
