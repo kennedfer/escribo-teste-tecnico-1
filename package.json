@@ -4,7 +4,7 @@
   "description": "Teste tecnico para desenvolvedor na Escribo",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "cls && mocha",
     "start": "cls && node input"
   },
   "author": "kennedfer",
