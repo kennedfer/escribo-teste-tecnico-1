@@ -1,8 +1,9 @@
-function isDivisible(dividend, diviser) {
-    return dividend % diviser == 0;
+function isDivisible(dividend, divider) {
+    if (notIsNumber(dividend) || notIsNumber(divider)) return "";
+    return dividend % divider == 0;
 }
 
-function sumDivideds(number) {
+function sumSmallerDivisibles(number) {
     let sum = 0;
 
     while (number > 3) {
@@ -14,3 +15,5 @@ function sumDivideds(number) {
 
     return sum;
 }
+
+module.exports = { isDivisible, sumSmallerDivisibles }
