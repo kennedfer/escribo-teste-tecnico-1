@@ -1,0 +1,11 @@
+{
+  "name": "teste1-escribo",
+  "version": "1.0.0",
+  "description": "Teste tecnico para desenvolvedor na Escribo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kennedfer",
+  "license": "ISC"
+}
