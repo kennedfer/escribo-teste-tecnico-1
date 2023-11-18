@@ -1,4 +1,4 @@
-const { ErrorMessages } = require("./errors");
+const { ErrorMessages } = require("./errors"); //
 
 /**
  * Verifica se o valor fornecido não é um número (ou é NaN).
@@ -44,7 +44,7 @@ function sumSmallerDivisibles(number) {
     let sum = 0;
 
     while (number > 3) {
-        number--;
+        number--; //decrementar primeiro garante que seja usada apenas numeros menores que o inicial
         if (isDivisible(number, 5) || isDivisible(number, 3)) {
             sum += number;
         }
